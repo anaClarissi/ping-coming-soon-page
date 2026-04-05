@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --blue-01: hsl(223, 87%, 63%);
+    --blue-01: #4f7df3;
 
-    --blue-02: hsl(223, 100%, 88%);
-    --red-01: hsl(354, 100%, 66%);
+    --blue-02: #c2d3ff;
+    --red-01: #ff5263;
 
-    --gray-01: hsl(0, 0%, 59%);
-    --blue-03: hsl(209, 33%, 12%);
+    --gray-01: #969696;
+    --blue-03: #151f29;
 
     --font-primary: 'Libre Franklin';
 }
@@ -24,4 +24,116 @@ body {
     font-family: var(--font-primary), Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     font-weight: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    width: 100%;
+    padding: 80px 30px 40px 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.content_title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--gray-01);
+}
+
+.content_title span {
+    font-weight: 700;
+    color: var(--blue-03);
+}
+
+.content_subtitle {
+    font-size: 1.4rem;
+    font-weight: 450;
+    color: var(--blue-03);
+}
+
+#notify_form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#email, #notify_btn {
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+#email {
+    border: 2px solid var(--blue-02);
+}
+
+#email::placeholder {
+    font-size: 1.1rem;
+    font-size: 500;
+    color: var(--blue-02);
+    padding-left: 10px;
+}
+
+#notify_btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: var(--blue-01);
+    cursor: pointer;
+    box-shadow: 8px 5px 10px #4f7df33d;
+}
+
+.content_dashboard {
+    width: 100%;
+}
+
+.content_dashboard__img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: var(--gray-01);
+}
+
+.footer_links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.footer_link__items a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.footer_link__items a {
+    text-decoration: none;
+    color: var(--blue-01);
+    border: 1px solid var(--blue-02);
 }
